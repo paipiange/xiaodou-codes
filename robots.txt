@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://good1uck.github.io/xiaodou-codes/sitemap.xml
+Sitemap: https://paipiange.github.io/xiaodou-codes/sitemap.xml

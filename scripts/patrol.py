@@ -39,12 +39,12 @@ from typing import Any
 BEIJING = timezone(timedelta(hours=8))  # 中国无夏令时，用固定 UTC+8，避免 Windows 缺 tzdata
 DEADLINE_BEIJING = datetime(2026, 11, 26, 16, 30, tzinfo=BEIJING)
 
-GITHUB_OWNER = "good1uck"
+GITHUB_OWNER = "paipiange"
 GITHUB_REPO = "xiaodou-codes"
 GITHUB_BRANCH = "main"
 GITHUB_PATH = "codes.json"
-PUBLIC_CODES_URL = "https://good1uck.github.io/xiaodou-codes/codes.json"
-SITE_URL = "https://good1uck.github.io/xiaodou-codes/"
+PUBLIC_CODES_URL = "https://paipiange.github.io/xiaodou-codes/codes.json"
+SITE_URL = "https://paipiange.github.io/xiaodou-codes/"
 
 SHA_RETRIES = 3
 USER_AGENT = "xiaodou-codes-patrol/1.0 (community handoff script)"

@@ -10,7 +10,7 @@
 
 每 5 分钟从 X 上找出「真正分享了豆包小豆邀请码、而且当时还没有回复」的原帖，把码写进网站数据文件，部署到：
 
-https://good1uck.github.io/xiaodou-codes/
+https://paipiange.github.io/xiaodou-codes/
 
 一码只能用一次。出处记原始发帖人。不要用 BetterOPC 或其他第三方码站。不要卖码、不要收费代抢。
 
@@ -41,8 +41,8 @@ Grok Bot 里还有一个抓码站 Canvas Page（id `0a711cdf-5053-4988-96a6-069e
 
 | 项 | 值 |
 | --- | --- |
-| 仓库 | https://github.com/good1uck/xiaodou-codes （默认分支 `main`） |
-| 网站 | https://good1uck.github.io/xiaodou-codes/ |
+| 仓库 | https://github.com/paipiange/xiaodou-codes （默认分支 `main`） |
+| 网站 | https://paipiange.github.io/xiaodou-codes/ |
 | 数据 | 根目录 `codes.json`（页面每 60 秒 fetch 一次） |
 | 部署 | `.github/workflows/pages.yml`，`push` 到 `main` 或手动 `workflow_dispatch` |
 
@@ -331,7 +331,7 @@ python scripts\patrol.py --self-test
 python scripts\patrol.py --self-test --codes-json codes.json
 ```
 
-`--dry-run` 且没有 `GITHUB_TOKEN` 时，脚本会读公开的 https://good1uck.github.io/xiaodou-codes/codes.json ，仍然会筛帖、打印新码，但不会写入仓库。
+`--dry-run` 且没有 `GITHUB_TOKEN` 时，脚本会读公开的 https://paipiange.github.io/xiaodou-codes/codes.json ，仍然会筛帖、打印新码，但不会写入仓库。
 
 脚本自己会：
 
@@ -349,11 +349,11 @@ python scripts\patrol.py --self-test --codes-json codes.json
 只要 **GitHub fine-grained PAT**，不要 X API token。
 
 1. 打开 https://github.com/settings/personal-access-tokens 创建 fine-grained token。
-2. Resource owner 选 `good1uck`，仓库只勾 `xiaodou-codes`。
+2. Resource owner 选 `paipiange`，仓库只勾 `xiaodou-codes`。
 3. 权限： **Contents: Read and write**（Metadata 只读一般会自动带上）。不要开 Pages、Administration、Actions 等多余权限。
 4. 把令牌放到机器环境变量 `GITHUB_TOKEN`，或任务计划程序的启动脚本里。**不要写入仓库、HANDOFF、posts.json 或聊天记录。**
 
-脚本提交时会先 `GET /repos/good1uck/xiaodou-codes/contents/codes.json?ref=main` 取 blob `sha`，再 `PUT` 同一路径，body 里带 `sha`、`branch=main`、以及 **Base64** 后的完整文件内容。成功后 Actions 自动部署。
+脚本提交时会先 `GET /repos/paipiange/xiaodou-codes/contents/codes.json?ref=main` 取 blob `sha`，再 `PUT` 同一路径，body 里带 `sha`、`branch=main`、以及 **Base64** 后的完整文件内容。成功后 Actions 自动部署。
 
 ---
 
@@ -400,7 +400,7 @@ schtasks /create /tn "XiaodouPatrol" /sc minute /mo 5 /tr "C:\xiaodou-codes\run-
 这些已经做好，交接后不必重做，除非页面域名变了。
 
 - **不蒜子**：页脚显示访问次数和人数，脚本为 `https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js`。没有后台。**在部分 iOS 浏览器上计数可能不显示**，这是该服务的限制。
-- **Google Search Console**：站点已用 HTML 标记验证通过。验证 meta（本身就公开写在首页里）为 `okJxWPEeoDwxvDOCB7D6Trs1ZvjEUzvH-SkoIrpEl24`。sitemap `https://good1uck.github.io/xiaodou-codes/sitemap.xml` 已提交。提交当时首页仍可能显示「Google 还不知道这个网址」，新站常见，要等抓取；可在 Search Console 里对首页点「请求编入索引」。
+- **Google Search Console**：站点首页保留了 HTML 验证标记。sitemap 地址为 `https://paipiange.github.io/xiaodou-codes/sitemap.xml`；如需查看索引数据，请在自己的 Search Console 账户中验证新站点并提交该 sitemap。
 - **Bing / IndexNow**：已用 IndexNow 提交过，接口返回 202。公开 key 文件是仓库根目录的 `12fb0e8f8c287ee46be0571f729ca8df.txt`（内容与文件名一致），不是密钥。若要在 Bing 后台看数据，可到 [Bing Webmaster Tools](https://www.bing.com/webmasters/) 用「从 Google Search Console 导入」。现行巡检**不会**在每次更新 `codes.json` 后再 ping 一次 IndexNow，需要的话可另行决定。
 
 ---
@@ -425,5 +425,5 @@ schtasks /create /tn "XiaodouPatrol" /sc minute /mo 5 /tr "C:\xiaodou-codes\run-
 
 文档和脚本在 GitHub 上的位置：
 
-- https://github.com/good1uck/xiaodou-codes/blob/main/HANDOFF.md
-- https://github.com/good1uck/xiaodou-codes/blob/main/scripts/patrol.py
+- https://github.com/paipiange/xiaodou-codes/blob/main/HANDOFF.md
+- https://github.com/paipiange/xiaodou-codes/blob/main/scripts/patrol.py

@@ -2,7 +2,7 @@
 
 社区收集的豆包「小豆」邀请码，来自 X 上的公开分享帖。**这不是豆包或字节跳动的官方网站。**
 
-- 站点：https://good1uck.github.io/xiaodou-codes/
+- 站点：https://paipiange.github.io/xiaodou-codes/
 - 数据：根目录的 [`codes.json`](./codes.json)
 
 ## 更新数据
