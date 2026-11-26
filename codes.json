@@ -1,7 +1,31 @@
 {
-  "lastUpdated": "2026-11-26 15:41 北京时间",
+  "lastUpdated": "2026-11-26 15:50 北京时间",
   "lastSinceId": "2125292486704951644",
   "codes": [
+    {
+      "code": "MAKING",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/MAKING",
+      "postedAt": "2026-11-26 15:38:25 北京时间",
+      "postedAtUtc": "2026-11-26T07:38:25.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/MAKING",
+      "note": "新邀请"
+    },
+    {
+      "code": "ASKING",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/ASKING",
+      "postedAt": "2026-11-26 15:38:25 北京时间",
+      "postedAtUtc": "2026-11-26T07:38:25.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/ASKING",
+      "note": "新邀请"
+    },
     {
       "code": "SUNDAY",
       "postId": "",
