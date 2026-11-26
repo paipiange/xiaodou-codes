@@ -1,7 +1,67 @@
 {
-  "lastUpdated": "2026-11-26 15:37 北京时间",
+  "lastUpdated": "2026-11-26 15:41 北京时间",
   "lastSinceId": "2125292486704951644",
   "codes": [
+    {
+      "code": "SUNDAY",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/SUNDAY",
+      "postedAt": "2026-11-26 15:34:28 北京时间",
+      "postedAtUtc": "2026-11-26T07:34:28.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/SUNDAY",
+      "note": "新邀请"
+    },
+    {
+      "code": "CHURCH",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/CHURCH",
+      "postedAt": "2026-11-26 15:34:28 北京时间",
+      "postedAtUtc": "2026-11-26T07:34:28.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/CHURCH",
+      "note": "新邀请"
+    },
+    {
+      "code": "PRAYER",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/PRAYER",
+      "postedAt": "2026-11-26 15:34:28 北京时间",
+      "postedAtUtc": "2026-11-26T07:34:28.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/PRAYER",
+      "note": "新邀请"
+    },
+    {
+      "code": "PASTOR",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/PASTOR",
+      "postedAt": "2026-11-26 15:34:28 北京时间",
+      "postedAtUtc": "2026-11-26T07:34:28.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/PASTOR",
+      "note": "新邀请"
+    },
+    {
+      "code": "SERMON",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/SERMON",
+      "postedAt": "2026-11-26 15:34:28 北京时间",
+      "postedAtUtc": "2026-11-26T07:34:28.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/SERMON",
+      "note": "新邀请"
+    },
     {
       "code": "CRYPTO",
       "postId": "",
